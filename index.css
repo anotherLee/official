@@ -1,0 +1,349 @@
+*{ padding:0; margin:0; box-sizing:border-box; }
+*::after, *::before{ padding:0; margin:0; box-sizing: border-box; }
+a{ text-decoration:none; color:inherit; }
+h1, h2, h3{ font-weight:normal; }
+ul, ol{ list-style: none; }
+
+
+/*begin of header*/
+
+.header-faker{
+    height:100px;
+}
+.header{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    justify-content: space-between;
+    max-height:100px;
+    padding:0 18%;
+    background-color:rgb(0,0,0);
+    font-size:17px;
+    color:white;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+    border-bottom:1px solid rgb(56,56,56);
+    z-index:10;
+}
+
+.header > .logo{
+    /*border:1px solid red;*/
+    height:58px;
+    width:183px;
+    margin:21px 0;
+    background:url('./images/TB.png');
+    background-repeat:no-repeat;
+    background-position:-7px -7px;
+}
+
+.header > .navigation{
+    line-height:38px;
+    padding:31px 0;
+    font-size:0;
+}
+
+.header > .navigation > .item{
+    margin-right:2em;
+    font-size:18px;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "sans-serif", "Arial";
+    cursor:pointer;
+}
+
+.header > .navigation > .login-icon{
+    display:inline-block;
+    vertical-align:top;
+    width:35px;
+    height:35px;
+    font-size:18px;
+    background:url('./images/TB.png');
+    background-repeat: no-repeat;
+    background-position:-263px -7px;
+}
+
+/*end of header*/
+
+/*begin of animation*/
+
+.animation{
+    position:relative;
+}
+
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0;
+    }
+    30%{
+        opacity:10%;
+    }
+    50%{
+        opacity:30%;
+    }
+    80%{
+        opacity:60%;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.animation > .float{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-90%);
+    -webkit-animation: show 5s;
+    -o-animation: show 5s;
+    animation: show 5s;
+}
+
+.animation > .show{
+    opacity:1;
+}
+
+
+/*end of animation*/
+
+/*begin of service*/
+
+.service{
+    text-align:center;
+    background:rgb(242,242,242);
+}
+.service > .title{
+    padding-top:2em;
+    font-size:32px;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+    color:rgb(0,1,51);
+}
+.service > .line{
+    width:3em;
+    border-top:2px solid rgb(0,1,51);
+    margin:1em auto;
+}
+.service > .analysis{
+    display:flex;
+    justify-content: center;
+}
+
+.service > .analysis > .item{
+    width:333px;
+    height:293px;
+    margin:1.5em 1.5em 3em 1.5em;
+    padding:3em 0;
+    font-size:20px;
+    border-radius:10px;
+    background:rgb(255,255,255);
+
+}
+
+.service > .analysis > .item > .text{
+    margin-top:1em;
+    font-size:20px;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+}
+
+.service > .analysis > .item > .icon{
+    display:inline-block;
+    width:105px;
+    height:105px;
+    border-radius:7px;
+    background-repeat:no-repeat;
+    background:url('./images/TB.png');
+}
+
+.service > .analysis > .image-analysis > .icon{
+    background-position:left -10px bottom -20px;
+}
+.service > .analysis > .text-analysis > .icon{
+    background-position:left -249px bottom -20px;
+}
+.service > .analysis > .time-analysis > .icon{
+    background-position:right -10px bottom -20px;
+}
+
+/*end of service*/
+
+/*begin of about-us*/
+
+.about-us{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    max-height:450px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.about-us > .background{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-2;
+    background:url('./images/about-us.png');
+}
+
+.about-us > .shade{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    background-color:rgba(0,2,13,0.88);
+}
+
+.about-us > .title{
+    padding-top:2em;
+    font-size:32px;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+    color:rgb(229,229,229);
+}
+
+.about-us > .line{
+    width:3em;
+    border-top:2px solid rgb(229,229,229);
+    margin:1em auto 2em;
+}
+
+.about-us > .introduction{
+    text-align: justify;
+    line-height:2em;
+    padding:0 26%;
+    padding-bottom:4em;
+    font-size:16px;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+    color:rgb(224,224,224);
+}
+
+/*end of about-us*/
+
+/*begin of collaboration*/
+
+.collaboration{
+    text-align: center;
+    padding:1px;
+}
+
+.collaboration > .title{
+    padding-top:100px;
+    font-size:32px;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+    color:rgb(0,1,51);
+}
+
+.collaboration > .line{
+    width:3em;
+    margin:34px auto 50px;
+    border-top:2px solid rgb(0,1,51);
+}
+
+.collaboration > .logos{
+    display:flex;
+    flex-direction: column;
+    max-width:1048px;
+    margin:0 auto 88px;
+    font-size:0;
+    -webkit-box-shadow: 7px 10px 7px 0 #E5E5E5;
+    -moz-box-shadow: 7px 10px 7px 0 #E5E5E5;
+    box-shadow: 7px 10px 7px 0 #E5E5E5;
+}
+
+.collaboration > .logos > ul{
+    font-size:0;
+}
+
+.collaboration > .logos > ul > .child{
+    display:inline-block;
+    width:222px;
+    height:83px;
+    margin:10px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*第一排图片*/
+
+.collaboration > .logos > .row-first > .first-first{
+    background-image:url('./images/collaborations/11.png');
+}
+.collaboration > .logos > .row-first > .first-second{
+    background-image:url('./images/collaborations/12.png');
+}
+.collaboration > .logos > .row-first > .first-third{
+    background-image:url('./images/collaborations/13.png');
+}
+.collaboration > .logos > .row-first > .first-fourth{
+    background-image:url('./images/collaborations/14.png');
+}
+
+/*第二排图片*/
+
+.collaboration > .logos > .row-middle > .middle-first{
+    background-image:url('./images/collaborations/21.png');
+}
+.collaboration > .logos > .row-middle > .middle-second{
+    background-image:url('./images/collaborations/22.png');
+}
+.collaboration > .logos > .row-middle > .middle-third{
+    background-image:url('./images/collaborations/23.png');
+}
+.collaboration > .logos > .row-middle > .middle-fourth{
+    background-image:url('./images/collaborations/24.png');
+}
+
+/*第三排图片*/
+
+.collaboration > .logos > .row-last > .last-first{
+    background-image:url('./images/collaborations/31.png');
+}
+.collaboration > .logos > .row-last > .last-second{
+    background-image:url('./images/collaborations/32.png');
+}
+.collaboration > .logos > .row-last > .last-third{
+    background-image:url('./images/collaborations/33.png');
+}
+.collaboration > .logos > .row-last > .last-fourth{
+    background-image:url('./images/collaborations/34.png');
+}
+
+
+/*end of collaboration*/
+
+/*begin of contact-us*/
+
+.contact-us{
+    background-color:rgb(0,4,31);
+}
+
+.contact-us > .contact{
+    text-align:center;
+    min-height:482px;
+    border-bottom:1px solid rgb(92,92,92);
+}
+
+.contact-us > .contact > .title{
+    padding-top:60px;
+    font-size:32px;
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+    color:rgb(229,229,229);
+}
+
+.contact-us > .contact > .line{
+    width:3em;
+    margin:34px auto 50px;
+    border-top:2px solid rgb(299,299,299);
+}
+
+.contact-us > .copy-right{
+    text-align:center;
+    padding:44px 0;
+    font-size:14px;
+    color:rgb(128,128,128);
+    font-family: "Lato","Helvetica Neue","Helvetica","sans-serif","Arial";
+}
